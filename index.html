@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My AI for Muma</title>
+
+    <!-- This connects the CSS file to the website -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Rishavs Ai For Muma</h1>
+        <p>Accurate math for profit.</p>
+    </header>
+
+    <button class="waitlist-button" onclick="openWaitlist()" disabled>Waitlist</button>
+
+    <section class="about">
+        <h2>About Our Business</h2>
+
+        <p>
+            My business is for my mom is using ai for her job to do math other people can use it if they want to. It explains hard math in easy terms and then makes sure you understand it if you do not like one technique then we teach you another until you understand it. Then gives you the answer with understanding. We are not like other Ai that give you the answer and can't explain it good. If you like my thing you can upgrade to my premium version for $22 for your whole entie life and you automatically get new updates if we drop new updates we do not rip you off the other ai companies.
+        </p>
+    </section>
+
+    <section class="Services">
+        <h2>Services We Offer</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>$22 Lifetime Subscription</h3>
+                <p>Unlike other subscription based services, we only ask for a $22 payment once that guarantees lifetime premium access to our ai.</p>
+            </div>
+
+            <div class="card">
+                <h3>24/7 Ai Maintaince Checker</h3>
+                <p>If the AI tutor is broken, we have 24/7 monitoring on our AI Assitants you can also call us, we will ensure that = our ai will be up and running in no time! </p>
+            </div>
+
+            <div class="card">
+                <h3>Premium Subscription 24/7 Live Assitance.</h3>
+                <p>If you have a premium subscription, and find that the AI Assitant is not helpful, you can contact one of our team memebers 24 hours a day 7 days a week because if your due date is in the night and you get out of school and then you have a snack and then have to do a sport like baseball and you come home a 9:30 you eat dinner it is 10:30 and your homewokr is due at 12:00 and you are confused you can contact us we are alway with you.then you take a shower then  . This is meant for students that need help in their homework and have a specific due date like 12:00 in the night then we will prioritize you in our watlist and we will get you on the line before an hour before the project is due. Their is also a emergency button if you really need help then press the button to receive immediate help. Please do not press the emergency button is you do not need help immediatly. Please RESPECT our time with you because if you do not understand something in 2 hour and it is not an emergency then try another day because we also need to talk to our other customers you try calling us the next day. You will be personally assist with any inquiries you have.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="ai-tool">
+        <h2>Ask Our AI Assistant to help you with a math problem</h2>
+
+        <p>
+            Type a question below. Our AI assistant will help you understand and answer the problem. Please specific descride what you need help in!
+        </p>
+
+        <input
+            id="userInput"
+            placeholder="Ask a question..."
+        >
+
+        <button onclick="askAI()">
+            Ask AI
+        </button>
+        <button class="emergency-button" onclick="emergencyHelp()" disabled>
+            Emergency
+        </button>
+        <button class="upgrade-button" onclick="upgradeNow()">
+            Click to Upgrade
+        </button>
+
+        <div id="responseBox">
+            AI responses will appear here.
+        </div>
+    </section>
+
+    <div id="waitlistPopup" class="waitlist-popup">
+        <div class="waitlist-popup-content">
+            <div class="waitlist-header">
+                <h3>Waitlist</h3>
+                <button class="waitlist-close" onclick="closeWaitlist()">×</button>
+            </div>
+            <p>Current callers in line for math help:</p>
+            <ol id="waitlistBody" class="waitlist-list">
+                <li><strong>Kayla R.</strong> — <span class="wait-time">2 min</span></li>
+                <li><strong>Jamal P.</strong> — <span class="wait-time">4 min</span></li>
+                <li><strong>Leah T.</strong> — <span class="wait-time">6 min</span></li>
+                <li><strong>Chris N.</strong> — <span class="wait-time">8 min</span></li>
+                <li><strong>Mia S.</strong> — <span class="wait-time">11 min</span></li>
+                <li><strong>Devon M.</strong> — <span class="wait-time">14 min</span></li>
+                <li><strong>Sophia L.</strong> — <span class="wait-time">18 min</span></li>
+            </ol>
+            <div class="waitlist-add-row">
+                <input id="waitlistNameInput" type="text" placeholder="Enter your name" />
+                <button id="waitlistAddButton" class="waitlist-add-button" onclick="addWaitlistEntry()">Add</button>
+            </div>
+            <p id="waitlistStatusMessage" class="waitlist-status"></p>
+            <p class="waitlist-note">This is a live 24/7 call waitlist for immediate support with math.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by Rishav</p>
+    </footer>
+
+    <!-- This connects the JavaScript file to the website -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
